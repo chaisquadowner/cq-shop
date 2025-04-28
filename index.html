@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CQ SHOP</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        header .logo {
+            float: left;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        header nav a {
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        header .search-bar {
+            float: right;
+            margin-top: 10px;
+            margin-right: 20px;
+        }
+
+        header .search-bar input[type="text"] {
+            padding: 5px;
+            border: none;
+        }
+
+        header .search-bar button {
+            padding: 5px 10px;
+            background: #555;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hero {
+            background: url('placeholder-background.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+        }
+
+        .hero .cta-button {
+            display: inline-block;
+            background: #e44d26;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .featured-products {
+            padding: 50px 0;
+        }
+
+        .featured-products h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product-item {
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .product-item .price {
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-item button {
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">CQ SHOP</div>
+            <nav>
+                <a href="#">Наш</a>
+                <a href="#">Сквад</a>
+                <a href="#">Удивительное</a>
+                <a href="#">Место!</a>
+            </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Добро пожаловать в CQ SHOP!</h1>
+            <p>Лучший выбор ратников!.</p>
+            <button onclick="goToLink('https://discord.gg/SKdK7fb7Ha')">discord</button>
+        </div>
+    </section>
+
+    <section class="featured-products">
+        <div class="container">
+            <h2 style="color: rgb(0, 255, 42);">Товары</h2>
+            <div class="product-grid">
+            <div class="product-item">
+            <img src="" alt="BLUE SPAMMER">
+            <h3 style="color: rgb(0, 0, 0);">BLUE SPAMMER!</h3>
+            <p style="color: rgb(0, 0, 0);">СПАММЕР ПО ВЕБХУКУ ДИСКОРД</p>
+            <span class="price" style="color: #ff9900;">FREE</span>
+            <button onclick="goToLink('https://github.com/chaisquadowner/BLUE-SPAMMER-')">Купить</button>
+            </div>
+            <div class="product-item">
+                <img src="" alt="DISC SPAM">
+                <h3 style="color: #3498db; font-size: 1.2em;">DISC SPAMMER</h3>
+                <p style="color: #2ecc71; font-size: 0.9em;">ДДОС ПОРТОВ!</p>
+                <span class="price" style="color: #e67e22; font-weight: bold; font-size: 1.1em;">200 ₽</span>
+                <button onclick="goToLink('https://t.me/+gbJC3xUkW5Y0MWFi')">Купить</button>
+            </div>
+            <div class="product-item">
+                <img src="" alt="BLUE SPAMMER">
+                <h3 style="color: rgb(0, 0, 0);">BLUE RAT</h3>
+                <p style="color: rgb(0, 0, 0);">RAT (Remote Access Trojan) — вредоносная программа, использующая функции удалённого доступа к поражённым ресурсам</p>
+                <span class="price" style="color: #ff9900;">50 ₽</span>
+                <button onclick="goToLink('https://t.me/+gbJC3xUkW5Y0MWFi')">Купить</button>
+                
+                <script>
+                function goToLink(url) {
+                    window.location.href = url;
+                }
+                </script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CQ SHOP. Все права защищены.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
